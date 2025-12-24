@@ -1,3 +1,4 @@
 .env
 letters.db
 clear.js
+node_modules/
