@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christmas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Write your letter to Santa!</h1>
+    <div class="form">
+        <form id="letterForm" method="POST">
+            <input type="text" name="name" placeholder="What should Santa call you?" required>
+            <input type="email" name="email" placeholder="Your email address" required>
+            <input type="text" name="wish" id="userWish" placeholder="What do you want Santa to bring? A cake? A basket of candies? Enter your christmas wish!" required>
+            <textarea name="message" id="letter" placeholder="Your letter to Santa..."></textarea>
+            <button type="submit">Send to Santa</button>
+        </form>
+    </div>
+    <div id="confirmation" style="display:none; margin-top:1rem;">
+        <h2>🎅 Santa got your letter!</h2>
+        <p id="confirmText"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

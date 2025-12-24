@@ -1,0 +1,64 @@
+body {
+  /* font-family: CenturyGothic,Arial, sans-serif; */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: /*#a50610*/ #e63946;
+  color: #f1f6ff;
+  text-align: center;
+  padding: 40px;
+}
+
+h1 {
+  color: #ffffff;
+}
+
+form {
+  background: #087129;
+  padding: 20px;
+  border-radius: 12px;
+  width: 800px;
+  height: 430px;
+  margin: auto;
+}
+
+input, textarea {
+  width: 80%;
+  margin: 20px 0;
+  padding: 15px;
+  border-radius: 8px;
+  border: none;
+}
+
+#letter{
+    height: 45px;
+}
+
+button {
+    display: block;
+    margin: auto;
+  background: #e63946;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  
+}
+button:hover {
+  background: #ffe5de;
+  color: #e63946;
+}
+
+#confirmation {
+  background: #faeb97;
+  color: #f9870e;
+  height: auto;
+  padding: 20px;
+  border-radius: 12px;
+  margin-top: 20px;
+  animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
