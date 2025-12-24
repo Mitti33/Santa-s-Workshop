@@ -4,13 +4,13 @@ dotenv.config();
 const express = require("express");
 const path = require('path');
 const cors = require('cors');
-const db = require('backend/db');
+const db = require('./backend/db');
 const cron = require('node-cron');
-const {sendGiftEmail} = require('backend/mailer');
-const {sendConfirmationEmail} = require('backend/mailer');
-const {generateSantaLetter} = require('backend/gemini');
-const { generateTurboImage } = require('backend/huggingface');
-const {isSafeWish} = require('backend/moderation');
+const {sendGiftEmail} = require('./backend/mailer');
+const {sendConfirmationEmail} = require('./backend/mailer');
+const {generateSantaLetter} = require('./backend/gemini');
+const { generateTurboImage } = require('./backend/huggingface');
+const {isSafeWish} = require('./backend/moderation');
 
 //Turn on the oven
 const app = express();
