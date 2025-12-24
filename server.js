@@ -28,7 +28,7 @@ app.use(express.static(path.join(__dirname, '..', 'frontend')));
 
 //Getting something on server from backend
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '..', 'frontend', 'index.html'));
+    res.sendFile(path.join(__dirname, 'frontend', 'index.html'));
 });
 
 //Posting something from server to backend
